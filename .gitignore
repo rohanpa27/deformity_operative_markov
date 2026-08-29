@@ -1,0 +1,14 @@
+# Allowlist repository: ignore everything, then permit only the analytic code.
+# This keeps manuscripts, figures, model outputs, source PDFs and local notes
+# out of version control by default.
+*
+
+!.gitignore
+!README.md
+!LICENSE
+
+!code/
+code/*
+!code/01_markov_model.R
+!code/02_make_figures.R
+!code/03_make_tables.R
